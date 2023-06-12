@@ -1,0 +1,295 @@
+main {
+  width: 98%;
+  margin: 1rem auto 4rem;
+  display: grid;
+  grid-template-columns: 11rem auto 22rem;
+  gap: 1rem;
+}
+
+main .middle .header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+main .middle .header input[type="date"] {
+  padding: var(--padding-2);
+  border-radius: var(--border-radius-2);
+  background-color: var(--color-white);
+  color: var(--color-gray-dark);
+}
+
+/* ==================== CARDS ==================== */
+main .middle .cards {
+  margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+main .middle .cards .card {
+  height: 11rem;
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  transition: all 100ms ease;
+}
+
+main .middle .cards .card:nth-child(1) {
+  background: linear-gradient(#ff796f, #bd261b);
+  box-shadow: 0px 2rem 3rem #f004;
+}
+
+main .middle .cards .card:nth-child(2) {
+  background: linear-gradient(#7f8191, #27282f);
+  box-shadow: 0px 2rem 3rem #0004;
+
+}
+
+main .middle .cards .card:nth-child(3) {
+  background: linear-gradient(#5d70ff, #5819c2);
+  box-shadow: 0px 2rem 3rem #60f4;
+}
+
+main .middle .cards .card:hover {
+  box-shadow: none;
+}
+
+main .middle .cards .card .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .middle .cards .card .top .left {
+  display: flex;
+  gap: 0.5rem;
+}
+
+main .middle .cards .card .top .left img {
+  height: 2rem;
+  width: 2rem;
+  padding: 4px;
+  border: 1px solid #fff;
+  border-radius: var(--border-radius-2);
+}
+
+main .middle .cards .card .top .left h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+main .middle .cards .card .top .right {
+  width: 3rem;
+}
+
+main .middle .cards .card .middle {
+  width: 100%;
+  margin-top: -0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main .middle .cards .card .middle h2 {
+  font-size: 1.4rem;
+}
+
+main .middle .cards .card .middle .chip {
+  width: 2.5rem;
+}
+
+main .middle .cards .card .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .middle .cards .card .bottom .right {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ==================== MONTHLY REPORT ==================== */
+main .monthly-report {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .monthly-report details b {
+  font-size: 0.8rem;
+}
+
+/* ==================== FAST PAYMENT ==================== */
+main .fast-payment {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+main .fast-payment .payments {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .fast-payment .payments .payment-markup {
+  padding: var(--padding-2);
+  border-radius: var(--border-radius-2);
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+main .fast-payment .payments .payment-markup:hover {
+  box-shadow: 0px 0px 0.5rem var(--color-black-light);  
+}
+
+main .fast-payment .payments .payment-markup span {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+main .fast-payment .payments .payment-markup:first-child span {
+  height: fit-content;
+  width: fit-content;
+}
+
+main .fast-payment .payments .payment-markup div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+main .fast-payment .payments .payment-markup div p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+main .container-chart {
+  height: fit-content;
+  width: 70%;
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-top: 5rem;
+  margin-inline: auto;
+  background-color: var(--color-white);
+}
+
+/* ==================== INVESTMENTS ==================== */
+main .right .investments-container {
+  border-radius: var(--card-border-radius);
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+main .right .investments-container .header {
+  padding: var(--card-padding);
+  display: flex;
+  justify-content: space-between;
+}
+
+main .right .investments-container .header a {
+  display: flex;
+  align-items: center;
+}
+
+main .right .investments-container .investment-item {
+  padding: var(--padding-2) var(--card-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+main .right .investments-container .investment-item:not(:last-child) {
+  border-bottom: 1px solid var(--color-light);
+}
+
+main .right .investments-container .investment-item:hover {
+  background-color: var(--color-light);
+}
+
+main .right .investments-container .investment-item img {
+  width: 2rem;
+}
+
+/* ==================== TRANSACTIONS ==================== */
+
+main .right .recent-transactions {
+  margin-top: 2rem;
+}
+
+main .right .recent-transactions .header {
+  padding: var(--card-padding);
+  display: flex;
+  justify-content: space-between;
+}
+
+main .right .recent-transactions .header a {
+  display: flex;
+  align-items: center;
+}
+
+main .right .recent-transactions .transaction-item {
+  padding: var(--padding-2) var(--card-padding);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+main .right .recent-transactions .transaction-item:hover {
+  background-color: var(--color-white);
+}
+
+main .right .recent-transactions .transaction-item .service {
+  display: flex;
+  gap: 0.8rem;
+}
+
+main .right .recent-transactions .transaction-item .service .icon {
+  padding: var(--padding-1);
+  border-radius: var(--border-radius-1);
+  display: flex;
+}
+
+main .right .recent-transactions .transaction-item
+.card-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main .right .recent-transactions .transaction-item
+.card-details .card {
+  height: 1.5rem;
+  width: 2.5rem;
+  border-radius: var(--border-radius-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .right .recent-transactions .transaction-item
+.card-details .card img {
+  height: fit-content;
+  width: 70%;
+}

@@ -1,0 +1,101 @@
+@media screen and (max-width: 1024px) {
+  nav .container .search-bar {
+    display: none;
+  }
+
+  nav .container .profile-area {
+    gap: 2rem;
+  }
+
+  nav .container .profile-area #menu-btn {
+    background-color: transparent;
+    display: block;
+  }
+
+  main {
+    width: 95%;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  main aside {
+    width: 16rem;
+    background-color: var(--color-white);
+    box-shadow: 0.5rem 0 2rem var(--color-primary-light);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow: scroll;
+    animation: showSideBar 500ms ease forwards;
+  }
+
+  main aside #close-btn {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    z-index: 1;
+  }
+
+  main aside .sidebar {
+    margin-top: 4rem;
+  }
+
+  main aside .sidebar a.active {
+    background-color: var(--color-light);
+  }
+
+  main aside .updates {
+    background-color: unset;
+  }
+
+  main .middle .cards {
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+
+  main .middle .fast-payment .payments {
+    gap: 0.5rem;
+  }
+
+  main .middle .container-chart {
+    width: 100%; 
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav .container .profile-area {
+    gap: 1rem;
+  }
+
+  nav .container .profile-area .profile :nth-child(n + 2) {
+    display: none;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  main .middle .cards {
+    grid-template-columns: 1fr;
+  }
+
+  main .middle .fast-payment {
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  main .middle .container-chart {
+    padding-block: var(--padding-2);
+  }
+  
+  main .middle .container-chart canvas {
+    width: 105% !important;
+  }
+}

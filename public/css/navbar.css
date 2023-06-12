@@ -1,0 +1,90 @@
+nav {
+  width: 100vw;
+  padding-block: var(--padding-1);
+  background-color: var(--color-white);
+}
+
+nav .container {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav .logo {
+  width: 7rem;
+}
+
+nav .search-bar {
+  width: 34%;
+  padding: var(--padding-2) var(--card-padding);
+  border-radius: var(--border-radius-2);
+  background-color: var(--color-light);
+  color: var(--color-gray-light);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  left: 15%;
+}
+
+nav .search-bar input[type="search"] {
+  height: 1.5rem;
+  width: 100%;
+  background: transparent;
+  color: var(--color-dark);
+}
+
+nav .search-bar input[type="search"]:hover {
+  color: var(--color-gray-dark);
+}
+
+nav .profile-area {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+nav .profile-area .theme-btn {
+  height: 2rem;
+  width: 5rem;
+  border-radius: var(--border-radius-2);
+  background-color: var(--color-light);
+  display: flex;
+}
+
+nav .profile-area .theme-btn span {
+  height: 100%;
+  width: 100%;
+  color: var(--color-dark);
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .profile-area .theme-btn span.active {
+  border-radius: var(--border-radius-2);
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+nav .profile-area .profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .profile-area .profile .profile-photo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+nav .profile-area > #menu-btn {
+  display: none;
+}

@@ -1,0 +1,5 @@
+@keyframes showSideBar {
+  to {
+    left: 0;
+  }
+}
